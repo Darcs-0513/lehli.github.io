@@ -574,15 +574,50 @@ header {
 
 .grid-galeria {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 2rem 0;
 }
 
 .grid-galeria img {
   width: 100%;
+  height: auto;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
+
+/* === Video LEHLI === */
+.video-lehli {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.video-lehli h2 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 2rem;
+  color: #50314C;
+  margin-bottom: 2rem;
+}
+
+.contenedor-videos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.video-box {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.video-box video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
 
 /* === CTA Final === */
 .cta-lehli {
@@ -606,18 +641,7 @@ header {
   background-color: #2a262b;
 }
 
-/* === Video Instagram === */
-.video-lehli {
-  text-align: center;
-  padding: 2rem 1rem;
-}
 
-.video-lehli h2 {
-  font-family: 'Bricolage Grotesque', sans-serif;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #50314C;
-}
 
 /* === Responsive === */
 @media (max-width: 768px) {
@@ -634,6 +658,17 @@ header {
   .valores-lehli {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .grid-galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .grid-galeria {
+    grid-template-columns: 1fr;
   }
 }
 
