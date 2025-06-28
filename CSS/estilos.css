@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #dbd2db;
+  color: #222;
+}
+
+/* ===== HEADER ===== */
+header {
+  background-color: #101820;
+  color: #dbb4c8;
+  padding: 3rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* IZQUIERDA: Logo + Texto */
+.logo-texto {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo-texto img {
+  height: 50px;
+}
+
+.titulo-sitio {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #dbb4c8;
+}
+
+/* CENTRO: Menú */
+.nav-centro {
+  flex: 1;
+  text-align: center;
+}
+
+.menu-centro {
+  list-style: none;
+  display: inline-flex;
+  gap: 6rem;
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-centro a {
+  color: #dbb4c8;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+.menu-centro a:hover {
+  text-decoration: underline;
+}
+
+/* DERECHA: Contacto */
+.nav-derecha .contacto-link {
+  color: #dbb4c8;
+  font-weight: bold;
+  text-decoration: none;
+    font-size: 1.5rem;
+
+}
+
+.nav-derecha .contacto-link:hover {
+  text-decoration: underline;
+}
+
+
+/* === HERO ESTILO MAQUETADO === */
+.hero {
+  background-color: #dbd2db;
+  padding: 2rem;
+}
+
+.hero-contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 8px dashed black;
+  border-radius: 1rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.hero-item {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Centro con texto */
+.hero-item.centro h1 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 3rem;
+  color: #4B0141;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.hero-item.centro p {
+  font-size: 1rem;
+  color: #4B0141;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+
+/* ==== Cuadros debajo de Hero ==== */
+
+.intro-textos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 7rem;
+  padding: 2rem;
+}
+
+.texto-bloque {
+  background-color: #50314c;
+  color: #f5d9eb;
+  border-radius: 10px;
+  padding: 5rem;
+  max-width: 700px;
+  flex: 1;
+  font-family: 'Audiowide', sans-serif;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+/* === LINEA DECORATIVA === */
+
+.separador-img {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+   margin-top: 3rem;
+}
+
+.separador-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+/* ===== DESTACADOS ===== */
+.destacados {
+  background-color: #dbd2db;
+  padding: 2rem;
+   margin-top: 4rem;
+}
+
+.contenedor-productos {
+  border: 5px solid black;
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: #dbd2db;
+  max-width: ;
+  margin: 0 auto;
+}
+
+.titulo-seccion {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: #3b363c;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.producto-card {
+  background-color: #5a2e4c;
+  color: #f5d9eb;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  max-width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.producto-card img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.producto-card h3 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.producto-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.producto-card button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #dbd2db;
+  color: #3b363c;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.producto-card button:hover {
+  background-color: #c2b7c2;
+}
+
+/* Botón inferior */
+.boton-ver-mas {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn-ver {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #3b363c;
+  color: #f5d9eb;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-ver:hover {
+  background-color: #2a262b;
+}
+
+
+
+
+
+/* ===== VALORES ===== */
+.valores-img {
+       margin-top: 4rem;
+
+  width: 100vw;
+  overflow: hidden;
+}
+
+.valores-img img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* ===== FOOTER ===== */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
