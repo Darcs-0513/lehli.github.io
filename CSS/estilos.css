@@ -742,3 +742,101 @@ header {
     font-size: 2rem;
   }
 }
+/* ============================ */
+/* ======= ACERCA DE CSS ===== */
+/* ============================ */
+
+.acerca-main {
+  background-color: #DBD2DB;
+  color: #3B363C;
+  font-family: 'Arial', sans-serif;
+  padding: 2rem;
+}
+
+/* ==== Intro ==== */
+.acerca-intro {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.acerca-intro h1 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #50314C;
+}
+
+.acerca-intro p {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+/* ==== Datos del Autor ==== */
+.acerca-datos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+  background-color: #f5d9eb;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.acerca-datos .foto img {
+  max-width: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.acerca-datos .info {
+  flex: 1;
+}
+
+.acerca-datos .info h2 {
+  font-size: 2rem;
+  color: #50314C;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.acerca-datos .info ul {
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.acerca-datos .info ul li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ==== CTA ==== */
+.acerca-cta {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.acerca-cta a {
+  display: inline-block;
+  background-color: #3B363C;
+  color: #DBB4C8;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+  .acerca-datos {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .acerca-datos .info ul {
+    padding-left: 0;
+  }
+}
