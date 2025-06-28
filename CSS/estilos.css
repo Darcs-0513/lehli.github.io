@@ -24,6 +24,10 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 /* IZQUIERDA: Logo + Texto */
@@ -125,6 +129,16 @@ header {
   color: #4B0141;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.btn-conoce img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-conoce img:hover {
+  transform: scale(1.05); /* efecto de zoom leve */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* sombra elegante */
 }
 
 
@@ -237,17 +251,21 @@ header {
 }
 
 .producto-card button {
-  padding: 0.5rem 1rem;
+   padding: 0.5rem 1rem;
   border: none;
   background-color: #dbd2db;
   color: #3b363c;
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .producto-card button:hover {
-  background-color: #c2b7c2;
+ background-color: #ffffff;
+  color: #5a2e4c;
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 /* Botón inferior */
@@ -268,9 +286,37 @@ header {
 }
 
 .btn-ver:hover {
-  background-color: #2a262b;
+   position: relative;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #3b363c;
+  color: #f5d9eb;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  overflow: hidden;
 }
 
+.btn-ver::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 0%;
+  background-color: #f5d9eb;
+  transition: width 0.4s ease;
+}
+
+.btn-ver:hover::after {
+  animation: llenarBarra 1.5s linear forwards;
+}
+
+@keyframes llenarBarra {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
 
 
 
