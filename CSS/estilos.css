@@ -2,6 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&display=swap');
 
+
+/* ========================== */
+/* ======= PÁGINA INICIO ==== */
+/* ========================== */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -323,8 +328,7 @@ header {
 
 /* ===== VALORES ===== */
 .valores-img {
-       margin-top: 4rem;
-
+  margin-top: 2rem;
   width: 100vw;
   overflow: hidden;
 }
@@ -337,7 +341,7 @@ header {
 
 
 /* ===== FOOTER ===== */
-.footer-lehli {
+.footer-lehli { 
   background-color: #101820;
   color: #dbb4c8;
   display: flex;
@@ -460,3 +464,167 @@ header {
   }
 }
 
+/* ============================ */
+/* ======= SOBRE LEHLI ======= */
+/* ============================ */
+/* ========== SOBRE LEHLI ========== */
+.sobre-lehli {
+  background-color: #DBD2DB;
+  color: #3B363C;
+  font-family: 'Arial', sans-serif;
+  padding: 2rem;
+}
+
+.intro-lehli {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.intro-lehli h1 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro-lehli p {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+/* === Historia === */
+.historia-lehli {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  background-color: #DBD2DB;
+  padding: 3rem 1rem;
+}
+
+.historia-lehli .texto {
+  flex: 1 1 45%;
+}
+
+.historia-lehli .texto h2 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 3rem;
+  color: #50314C;
+  margin-bottom: 1rem;
+}
+
+.historia-lehli .texto p {
+  font-size: 1.4rem;
+  color: #3B363C;
+  line-height: 1.6;
+}
+
+.historia-lehli .imagen {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
+}
+
+.historia-lehli .imagen img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* === Valores === */
+.valores-lehli {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.valores-lehli .tarjeta {
+  background-color: #50314C;
+  color: #f5d9eb;
+  padding: 1.5rem;
+  border-radius: 8px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 0 8px rgba(0,0,0,2);
+}
+
+/* === Galería === */
+.galeria-lehli {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.galeria-lehli h2 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.grid-galeria img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* === CTA Final === */
+.cta-lehli {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.btn-lehli {
+  display: inline-block;
+  background-color: #3B363C;
+  color: #DBB4C8;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-lehli:hover {
+  background-color: #2a262b;
+}
+
+/* === Video Instagram === */
+.video-lehli {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.video-lehli h2 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #50314C;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .historia-lehli {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .historia-lehli .texto,
+  .historia-lehli .imagen {
+    flex: 1 1 100%;
+  }
+
+  .valores-lehli {
+    flex-direction: column;
+    align-items: center;
+  }
+}
