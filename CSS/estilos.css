@@ -53,7 +53,7 @@ header {
 .menu-centro {
   list-style: none;
   display: inline-flex;
-  gap: 6rem;
+  gap: 3rem;
   font-size: 1.5rem;
   padding: 0;
   margin: 0;
@@ -302,31 +302,39 @@ footer {
 /* ==== MEDIA QUERIES PARA HEADER ==== */
 @media (max-width: 768px) {
   header {
-    flex-direction: column;
-    padding: 2rem 1rem;
-    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    gap: 1rem;
+    justify-content: center;
   }
 
   .logo-texto {
+    flex-basis: 100%;
     justify-content: center;
-    margin-bottom: 1rem;
-  }
-
-  .titulo-sitio {
-    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .nav-centro {
-    margin-bottom: 1rem;
+    flex-basis: 100%;
+    text-align: center;
   }
 
   .menu-centro {
-    flex-direction: column;
-    gap: 1.5rem;
-    font-size: 1.2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    font-size: 1.1rem;
+  }
+
+  .nav-derecha {
+    flex-basis: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
   }
 
   .nav-derecha .contacto-link {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
