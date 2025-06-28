@@ -671,7 +671,74 @@ header {
     grid-template-columns: 1fr;
   }
 }
+/* =============================== */
+/* ===== PREGUNTAS FRECUENTES ==== */
+/* =============================== */
 
-/* ============================ */
-/* ======= SOBRE LEHLI ======= */
-/* ============================ */
+.faq-lehli {
+  background-color: #dbd2db;
+  color: #3b363c;
+  font-family: 'Arial', sans-serif;
+  padding: 2rem;
+}
+
+.intro-faq {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.intro-faq h1 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.intro-faq p {
+  font-size: 1.2rem;
+  font-style: italic;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq-contenido {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.pregunta {
+  background-color: #50314c;
+  color: #f5d9eb;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.pregunta:hover {
+  transform: translateY(-20px);
+}
+
+.pregunta h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  color: #dbb4c8;
+}
+
+.pregunta p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  .faq-contenido {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-faq h1 {
+    font-size: 2rem;
+  }
+}
