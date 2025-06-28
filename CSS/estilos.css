@@ -467,7 +467,7 @@ header {
 /* ============================ */
 /* ======= SOBRE LEHLI ======= */
 /* ============================ */
-/* ========== SOBRE LEHLI ========== */
+
 .sobre-lehli {
   background-color: #DBD2DB;
   color: #3B363C;
@@ -491,7 +491,8 @@ header {
   font-style: italic;
 }
 .intro-lehli img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 400px;
   height: auto;
   margin: 1rem auto;
   display: block;
@@ -635,3 +636,7 @@ header {
     align-items: center;
   }
 }
+
+/* ============================ */
+/* ======= SOBRE LEHLI ======= */
+/* ============================ */
