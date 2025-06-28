@@ -188,7 +188,6 @@ header {
   border-radius: 10px;
   padding: 2rem;
   background-color: #dbd2db;
-  max-width: ;
   margin: 0 auto;
 }
 
@@ -297,4 +296,37 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
+}
+
+
+/* ==== MEDIA QUERIES PARA HEADER ==== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .logo-texto {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .titulo-sitio {
+    font-size: 1.5rem;
+  }
+
+  .nav-centro {
+    margin-bottom: 1rem;
+  }
+
+  .menu-centro {
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .nav-derecha .contacto-link {
+    font-size: 1.2rem;
+  }
 }
