@@ -291,15 +291,78 @@ header {
 
 
 /* ===== FOOTER ===== */
-footer {
-  background-color: #222;
-  color: white;
+.footer-lehli {
+  background-color: #101820;
+  color: #dbb4c8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-item {
   text-align: center;
-  padding: 1rem;
+  margin: 0.5rem 1rem;
+}
+
+.footer-item p {
+  margin: 0;
+}
+
+.footer-item.redes {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-item.redes a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #dbb4c8;
+  gap: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.footer-item.redes a:hover {
+  text-decoration: underline;
+}
+
+.icono-red {
+  width: 30px;
+  height: 30px;
+}
+
+/* Estilo para el correo */
+.correo-footer {
+  color: #dbb4c8;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.correo-footer:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-lehli {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-item.redes {
+    justify-content: center;
+  }
 }
 
 
-/* ==== MEDIA QUERIES PARA HEADER ==== */
+
+/* ==== MEDIA QUERIES PARA HEADER Y FOOTER ==== */
 @media (max-width: 768px) {
   header {
     flex-direction: row;
@@ -338,3 +401,16 @@ footer {
     font-size: 1.1rem;
   }
 }
+
+@media (max-width: 768px) {
+  .footer-lehli {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-item.redes {
+    justify-content: center;
+  }
+}
+
