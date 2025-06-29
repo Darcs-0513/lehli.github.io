@@ -937,3 +937,164 @@ header {
     padding: 1.5rem;
   }
 }
+
+/* ========================== */
+/* ======== BLOG =========== */
+/* ========================== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-padding-top: 140px; /* Asegura espacio al usar anclas */
+}
+
+.blog-lehli {
+  background-color: #DBD2DB;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+  color: #3B363C;
+}
+
+.blog-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.blog-intro img {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 1rem auto;
+}
+
+.blog-intro h1 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 2.5rem;
+  color: #50314C;
+  margin-bottom: 0.5rem;
+}
+
+.blog-intro p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.barra-categorias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.barra-categorias a {
+  background-color: #50314C;
+  color: #F5D9EB;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.barra-categorias a:hover {
+  background-color: #3B363C;
+}
+
+.blog-categoria {
+  margin-top: 4rem;
+  padding-top: 60px; /* Espacio superior cuando se navega por ancla */
+  scroll-margin-top: 140px;
+}
+
+.blog-categoria h2 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 2rem;
+  color: #50314C;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #dbb4c8;
+  padding-bottom: 0.5rem;
+}
+
+/* 🟣 Grid de blog en 2 columnas */
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.articulo {
+   display: flex;
+  gap: 2rem;
+  background-color: #F5D9EB;
+  border-radius: 12px;
+  padding: 2rem;
+  align-items: center;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+  transition: transform 0.2s ease;
+  min-height: 260px;
+}
+
+.articulo:hover {
+  transform: translateY(-4px);
+}
+
+.articulo img {
+   width: 400px;
+  height: auto;
+  max-height: 250px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.articulo-contenido {
+  flex: 1;
+}
+
+.articulo h3 {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 1.8rem;
+  color: #101820;
+  margin-bottom: 0.7rem;
+}
+
+.articulo p {
+   font-size: 1.1rem;
+  color: #3B363C;
+  line-height: 1.6;
+}
+
+.btn-leer-mas {
+   display: inline-block;
+  margin-top: 1rem;
+  background-color: #50314C;
+  color: #F5D9EB;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-leer-mas:hover {
+  background-color: #3B363C;
+}
+
+@media (max-width: 768px) {
+  .articulo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .articulo img {
+    width: 100%;
+    height: auto;
+       max-height: none;
+  }
+
+  .articulo-contenido {
+    text-align: center;
+  }
+}
