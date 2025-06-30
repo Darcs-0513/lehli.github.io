@@ -20,13 +20,15 @@ body {
   color: #222;
 }
 
-/* ===== HEADER ===== */
+/* ========================== */
+/* ======= HEADER ==== */
+/* ========================== */
 header {
   background-color: #101820;
   color: #dbb4c8;
   padding: 3rem 4rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /*separa los tres bloques*/
   align-items: center;
   flex-wrap: wrap;
 
@@ -53,9 +55,11 @@ header {
   color: #dbb4c8;
 }
 
+
+
 /* CENTRO: Menú */
 .nav-centro {
-  flex: 1;
+  flex: 1; /*Que se quede en el centro*/
   text-align: center;
 }
 
@@ -84,7 +88,7 @@ header {
   color: #dbb4c8;
   font-weight: bold;
   text-decoration: none;
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 
 }
 
@@ -93,7 +97,16 @@ header {
 }
 
 
-/* === HERO ESTILO MAQUETADO === */
+
+
+
+
+
+
+
+/* ========================== */
+/* ======= HERO ==== */
+/* ========================== */
 .hero {
   background-color: #dbd2db;
   padding: 2rem;
@@ -120,22 +133,6 @@ header {
   height: auto;
 }
 
-/* Centro con texto */
-.hero-item.centro h1 {
-  font-family: 'Bricolage Grotesque', sans-serif;
-  font-size: 3rem;
-  color: #4B0141;
-  margin-bottom: 0.5rem;
-  letter-spacing: 2px;
-}
-
-.hero-item.centro p {
-  font-size: 1rem;
-  color: #4B0141;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
 .btn-conoce img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
@@ -143,12 +140,14 @@ header {
 
 .btn-conoce img:hover {
   transform: scale(1.05); /* efecto de zoom leve */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* sombra elegante */
 }
 
 
 
-/* ==== Cuadros debajo de Hero ==== */
+/* ===================================*/
+/* ======= Cuadros debajo de Hero ==== */
+/* =================================== */
+
 
 .intro-textos {
   display: flex;
@@ -171,7 +170,17 @@ header {
   line-height: 1.6;
 }
 
-/* === LINEA DECORATIVA === */
+@media (max-width: 768px) {
+  .texto-bloque {
+    flex: 1 1 100%;
+    max-width: 90%;
+  }
+}
+
+
+/* ===================================*/
+/* ======= LINEA DECORATIVA ==== */
+/* =================================== */
 
 .separador-img {
   width: 100vw;
@@ -195,7 +204,9 @@ header {
 
 
 
-/* ===== DESTACADOS ===== */
+/* ===================================*/
+/* ======= Productos Destacados  ==== */
+/* =================================== */
 .destacados {
   background-color: #dbd2db;
   padding: 2rem;
@@ -273,60 +284,10 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-/* Botón inferior */
-.boton-ver-mas {
-  text-align: center;
-  margin-top: 2rem;
-}
+/* ===================================*/
+/* ======= VALORES =================== */
+/* =================================== */
 
-.btn-ver {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: #3b363c;
-  color: #f5d9eb;
-  font-family: 'Bricolage Grotesque', sans-serif;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-.btn-ver:hover {
-   position: relative;
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: #3b363c;
-  color: #f5d9eb;
-  font-family: 'Bricolage Grotesque', sans-serif;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  overflow: hidden;
-}
-
-.btn-ver::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 4px;
-  width: 0%;
-  background-color: #f5d9eb;
-  transition: width 0.4s ease;
-}
-
-.btn-ver:hover::after {
-  animation: llenarBarra 1.5s linear forwards;
-}
-
-@keyframes llenarBarra {
-  0% { width: 0%; }
-  100% { width: 100%; }
-}
-
-
-
-
-/* ===== VALORES ===== */
 .valores-img {
   margin-top: 2rem;
   width: 100vw;
@@ -399,24 +360,12 @@ header {
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .footer-lehli {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-item.redes {
-    justify-content: center;
-  }
-}
-
-
 
 /* ==== MEDIA QUERIES PARA HEADER Y FOOTER ==== */
 @media (max-width: 768px) {
   header {
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /**/
     padding: 1.5rem;
     gap: 1rem;
     justify-content: center;
@@ -463,6 +412,8 @@ header {
     justify-content: center;
   }
 }
+
+
 
 /* ============================ */
 /* ======= SOBRE LEHLI ======= */
@@ -537,7 +488,7 @@ header {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+
 }
 
 /* === Valores === */
